@@ -18,7 +18,7 @@ export class LoginComponent {
      ) {
 
      }
-
+     // reactive form for login page
      loginForm =  new FormGroup( {
       email : new FormControl<string>("", [
         Validators.required
@@ -28,7 +28,9 @@ export class LoginComponent {
       ])
      });
 
-    login(){
+     //fetch values from form and check whether login credentials are correct or not
+     // emit the user once logged in
+     login(){
       let values = this.loginForm.value;
 
       if( !values.email || !values.password ) return;

@@ -20,6 +20,7 @@ export class SidebarComponent {
     
   }
 
+  // below code toggles the visibility of catalogue and mycourses
   mycourses_visibility : boolean = false;
   catalogue_visibility : boolean = true;
     change_view( id : string ){
