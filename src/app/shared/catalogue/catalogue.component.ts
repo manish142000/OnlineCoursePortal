@@ -28,14 +28,14 @@ export class CatalogueComponent implements OnInit {
     return this._searchtext;
   }
 
+  // set the search value from text box
   set searchtext(value : string){
     this._searchtext = value;
     
     this.searched_courses = this.Searching(value);
-
-    console.log("YE hai searched movies", this.searched_courses);
   }
   
+  // for buying a specific course, emitting the course name 
   buy( cse : string){
     console.log(cse);
     this.course.emit.next(cse);
@@ -43,12 +43,14 @@ export class CatalogueComponent implements OnInit {
   }
 
   ngOnInit(): void {
+     // subscribe to get all the courses in courses array
       this.mycourse.getCourses().subscribe( (res) => {
         console.log(res);
         this.courses = res;
         this.searched_courses = res;
       } )
 
+      //filtering the courses into searched courses according to difficulty
       this.mycourse.difficulty.subscribe( (val) => {
         if( val == 'All'){
           this.searched_courses = this.courses;
@@ -65,6 +67,7 @@ export class CatalogueComponent implements OnInit {
     }  )
   }
 
+  //filtering the courses according to search text variable
   Searching(searchBy:string):ICourse[]{
 
     searchBy = searchBy.toLocaleLowerCase();
