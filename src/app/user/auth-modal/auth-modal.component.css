@@ -1,0 +1,38 @@
+.auth {
+    height: 500px;
+    width: 400px;
+
+    border: 2px solid black;
+
+    border-radius: 5%;
+
+    margin: auto;
+
+    position: relative;
+
+    max-width: 400px;
+
+    min-width: 400px;
+
+    margin-top: 20px;
+}
+
+#login-select{
+    display: inline-block; 
+    cursor: pointer;
+    position: absolute;
+    left: 20%;
+}
+
+#register-select{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    left: 70%;
+}
+
+#close {
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+}

@@ -1,0 +1,15 @@
+.cat{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#search_label{
+    padding: 10px;
+}
+
+#search_input{
+    padding: 10px;
+}
+
+

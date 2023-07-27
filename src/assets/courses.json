@@ -1,0 +1,56 @@
+[
+    {
+        "name" : "css",
+        "about" : "Learn css in 20 minutes",
+        "img_path" : "https://rb.gy/ygejf",  
+        "rating" : "4.5",
+        "instructor" : "Mr. A",
+        "video_path" : "/assets/css.mp4",
+        "difficulty" : "Easy"  
+    },
+    {
+        "name" : "angular",
+        "img_path" :"https://rb.gy/v2sh5", 
+        "about" : "Angular is a frontend framework, it is used to build Single Page application",
+        "rating" : "4",
+        "instructor" : "Mr. B",
+        "video_path" : "/assets/angular.mp4",
+        "difficulty" : "Hard"  
+    },
+    {
+        "name" : "C#",
+        "img_path" : "https://rb.gy/xsopl", 
+        "about" : "Enter the world of object oriented programming as a beginner, or expand your programming knowledge with a C# course taught by top rated instructors",
+        "rating" : "5",
+        "instructor" : "Mr. C" ,
+        "video_path" : "/assets/C#.mp4",
+        "difficulty" : "Easy"   
+    },
+    {
+        "name" : "react",
+        "img_path" : "https://rb.gy/bg2po",  
+        "about" : "React is a free and open-source front-end JavaScript library for building user interfaces based on components.",
+        "rating" : "3.5",
+        "instructor" : "Mr. D" ,
+        "video_path" : "/assets/react.mp4",
+        "difficulty" : "Medium"   
+    },
+    {
+        "name" : ".Net",
+        "img_path" : "https://rb.gy/6jvzb", 
+        "about" : ".NET is a free, cross-platform, open source developer platform for building many different types of applications",
+        "rating" : "4.5",
+        "instructor" : "Mr. E",
+        "video_path" : "/assets/",
+        "difficulty" : "Medium"    
+    },
+    {
+        "name" : "node",
+        "img_path" : "https://rb.gy/qcafc", 
+        "about" : "Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser.",
+        "rating" : "5",
+        "instructor" : "Mr. F",
+        "video_path" : "/assets/nodejs.mp4",
+        "difficulty" : "Hard"    
+    }
+]

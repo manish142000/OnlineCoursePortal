@@ -1,0 +1,21 @@
+<form [formGroup]="registerForm" >
+    <div class="name">
+        <label for="name">UserName</label>
+        <div id="in_name"><app-input [controls]="registerForm.controls.name" type="text"  placeholder="Enter name"></app-input></div>
+    </div>
+    <div class="email">
+        <label for="Email">Email</label>
+        <div id="in_email"><app-input [controls]="registerForm.controls.email" type="email"  placeholder="Enter Email address"></app-input></div>
+    </div>
+    <div class="password">
+        <label for="password">Password</label>
+        <div id="in_password"><app-input [controls]="registerForm.controls.password" type="password"  placeholder="Enter password"></app-input></div>
+    </div>
+    <div class="confirm_password">
+        <label for="confirm_password">Confirm Password</label>
+        <div id="in_confirmpassword"><app-input [controls]="registerForm.controls.confirm_password" type="password"  placeholder="Confirm Password"></app-input></div>
+    </div>
+    <button class="btn btn-outline-dark" type="submit">
+        Register
+    </button>
+</form>

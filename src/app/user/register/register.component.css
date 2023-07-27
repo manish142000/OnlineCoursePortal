@@ -1,0 +1,36 @@
+.name{
+    position: absolute;
+    left: 4%;
+    top: 15%;
+}
+
+.email{
+    position: absolute;
+    left: 4%;
+    top : 35%;
+}
+
+.password {
+    position: absolute;
+    left: 4%;
+    top: 55%;
+}
+
+
+.confirm_password{
+    position: absolute;
+    left: 4%;
+    top: 75%;
+}
+
+.btn{
+    position: absolute;
+    left: 8%;
+    width: 80%;
+    top: 90%;
+}
+
+input {
+    width: 350px;
+}
+

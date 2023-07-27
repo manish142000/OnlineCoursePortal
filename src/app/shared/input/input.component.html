@@ -1,0 +1,19 @@
+<input [formControl]="controls" [placeholder]="placeholder" [type]="type">
+
+<ng-container *ngIf="controls.dirty && controls.touched">
+
+    <p *ngIf="controls.errors?.required" class="text-danger">
+        Feild is required 
+    </p>
+    <p *ngIf="controls.errors?.email" class="text-danger">Enter a valid Email</p>
+
+    <p *ngIf="controls.errors?.pattern" class="text-danger">
+        The password must be at least 8 characters,
+        must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number
+    </p>
+
+    <p *ngIf="controls.errors?.minlength" class="text-danger">
+        The value you entered is {{ controls.errors?.minlength.actualLength }} characters long. 
+        It must be atleast {{ controls.errors?.minlength.requiredLength }} characters long.
+    </p>
+</ng-container>

@@ -1,0 +1,21 @@
+<div class="mycourses">
+    <div *ngFor="let course of courses">
+        <div class="card" style="width: 18rem;">
+            <video  controls>
+                <source [src]=course.video_path type="video/mp4">
+            </video>
+            <br><br>
+            <label for="progress">Progress</label>
+            <figcaption>
+                <progress id="progress" max=100 value=0 type="number">Progress</progress>
+            </figcaption>
+            <div class="card-body">
+              <p class="card-text">{{ course.about }}</p>
+            </div>
+
+            <div class="rating">
+                Rating {{ course.rating }}/5
+            </div>
+          </div>
+    </div>
+</div>

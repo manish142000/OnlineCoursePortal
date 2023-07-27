@@ -1,0 +1,15 @@
+<div class="search">
+    <label id="search_label" for="">Search</label>
+    <span><input id="search_input" type="text" placeholder="search..." [(ngModel)]="searchtext"></span>
+</div>
+<div class="cat">
+    <div *ngFor="let course of searched_courses" >
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src={{course.img_path}} alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">{{ course.about }}</p>
+            </div>
+            <button (click)="buy(course.name)" routerLink="payment" class="btn btn-outline-dark">Buy</button>
+        </div>
+    </div>
+</div>

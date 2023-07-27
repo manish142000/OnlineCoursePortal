@@ -1,0 +1,57 @@
+
+.paymentform{
+    height: 400px;
+    width: 400px;
+
+    border: 3px solid black;
+
+    border-radius: 10px;
+
+    margin: auto;
+
+    margin-top: 50px;
+
+    position: relative;
+}
+
+.form{
+    position: relative;
+}
+
+
+.acc{
+    position: absolute;
+    left: 80%;
+    top: 50%;
+}
+
+.name{
+    position: absolute;
+    left: 10%;
+    top: 16px;
+}
+
+.cardNo{
+    position: absolute;
+    left: 10%;
+    top: 90px;
+}
+
+.exp_date{
+    position: absolute;
+    left: 10%;
+    top: 170px;
+}
+
+.cvv{
+    position: absolute;
+    left: 10%;
+    top: 250px
+}
+
+.btn{
+    position: absolute;
+    left: 10%;
+    top: 330px;
+    width: 80%;
+}

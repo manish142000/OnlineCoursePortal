@@ -1,0 +1,27 @@
+.email{
+    position: absolute;
+    left: 3%;
+
+    top: 10%;
+
+    padding: 5%;
+}
+
+.password{
+    position: absolute;
+    left: 3%;
+    top: 40%;
+    padding: 5%;
+}
+
+.btn{
+    position: absolute;
+    left: 8%;
+    top: 80%;
+    padding: 5%;
+    width: 80%;
+}
+
+input{
+    width: 350px;
+}

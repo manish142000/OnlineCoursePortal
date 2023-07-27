@@ -1,0 +1,28 @@
+<div class="paymentform">
+    <form class="form" [formGroup]="paymentForm" (ngSubmit)="add()">
+        <div class="acc"> 
+            <div>Accepted Cards</div>
+            <span><i class="fa-brands fa-cc-visa"></i></span>
+            <span><i class="fa-brands fa-cc-mastercard"></i></span>
+            <span><i class="fa-brands fa-paypal"></i></span>
+            <span><i class="fa-brands fa-cc-amex"></i></span>
+        </div>
+        <div class="name">
+            <label for="">Name on the card</label>
+            <div><app-input [controls]="paymentForm.controls.name" type="text" placeholder="Name on the card"></app-input></div>
+        </div>
+        <div class="cardNo">
+            <label for="">Credit/Debit Card Number</label>
+            <div><app-input [controls]="paymentForm.controls.cardNumber" type="text" placeholder="Card Number"></app-input></div>
+        </div>
+        <div class="exp_date">
+            <label for="">Exp. Date</label>
+            <div><app-input [controls]="paymentForm.controls.exp_date" type="date" placeholder="Expiration Date"></app-input></div>
+        </div>
+        <div class="cvv">
+            <label for="">CVV</label>
+            <div><app-input [controls]="paymentForm.controls.cvv" type="text" placeholder="CVV"></app-input></div>
+        </div>
+        <button class="btn" type="submit" class="btn btn-outline-dark" [disabled]="paymentForm.invalid" >Submit</button>
+    </form>
+</div>

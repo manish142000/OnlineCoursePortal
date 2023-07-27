@@ -1,0 +1,17 @@
+<ng-container *ngIf="!(auth.isAuthenticatedDelay$ | async) && showModal()">
+    <div class="auth">
+        <div (click)="onLogin()"  id="login-select">
+            Login
+        </div>
+        <div (click)="onRegister()" id="register-select">
+            Register
+        </div>
+        <span id="close" (click)="closeModal()">&#x274C;</span>
+        <div *ngIf="showLogin() else register">
+            <app-login></app-login>
+        </div>
+        <ng-template #register>
+            <app-register></app-register>
+        </ng-template>
+    </div>
+</ng-container>
